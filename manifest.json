@@ -1,0 +1,35 @@
+{
+  "name": "Tracking Listener",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "An extension that listen to all tracking events",
+  "homepage_url": "https://dubizzle.com/",
+  "permissions": [
+    "activeTab",
+    "background",
+    "webRequest",
+    "*://dubai.dubizzle.com/*",
+    "*://tracking.olx-st.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icons/tracking_logo_16.png",
+      "32": "images/icons/tracking_logo_32.png",
+      "48": "images/icons/tracking_logo_48.png",
+      "128": "images/icons/tracking_logo_128.png"
+    },
+    "default_title": "Tracking Chrome Extension",
+    "default_popup": "html/popup.html"
+  },
+  "icons": {
+    "16": "images/icons/tracking_logo_16.png",
+    "32": "images/icons/tracking_logo_32.png",
+    "48": "images/icons/tracking_logo_48.png",
+    "128": "images/icons/tracking_logo_128.png"
+  }
+}
